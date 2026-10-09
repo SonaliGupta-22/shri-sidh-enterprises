@@ -43,12 +43,7 @@ export default function Festival() {
   const { pick } = useLang()
   if (!festival.enabled) return null
 
-  const messages = (
-    <>
-      <span><b>{pick(festival.title)}</b></span>
-      {festival.ticker.map((m) => <span key={m.en}>{pick(m)}</span>)}
-    </>
-  )
+  const messages = festival.ticker.map((m) => <span key={m.en}>{pick(m)}</span>)
 
   return (
     <section className="strip" aria-label={pick(festival.title)}>
@@ -58,6 +53,7 @@ export default function Festival() {
         ))}
       </div>
       <Rangoli />
+      <strong className="strip-title">{pick(festival.title)}</strong>
       <div className="strip-ticker">
         <div className="strip-track">
           {messages}
