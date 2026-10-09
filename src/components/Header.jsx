@@ -3,6 +3,7 @@ import { business } from '../data/siteData.js'
 import { useLang } from '../i18n.jsx'
 
 const links = [
+  ['offers', '#offers'],
   ['products', '#products'],
   ['why', '#why'],
   ['about', '#about'],

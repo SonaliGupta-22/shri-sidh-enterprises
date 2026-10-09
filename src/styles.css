@@ -93,6 +93,18 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 @media (max-width: 560px) { .strip { height: 44px; gap: 8px; padding: 0 10px; } .strip-rangoli { width: 28px; height: 28px; } .strip-title { font-size: 14px; } }
 @media (prefers-reduced-motion: reduce) { .strip-rangoli, .strip-track, .strip-sparks i { animation: none; } .strip-sparks { display: none; } }
 
+/* Offers */
+.offers { background: linear-gradient(180deg, #fff8e6, #fdf0cf); border-block: 1px solid #f1dca0; }
+.offer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
+.offer { position: relative; background: #fff; border-radius: var(--radius); padding: 40px 22px 24px; border: 1.5px dashed #e0b84a; box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: flex-start; gap: 8px; transition: 0.25s; }
+.offer:hover { transform: translateY(-5px); box-shadow: 0 14px 32px rgba(31, 36, 48, 0.14); }
+.offer-tag { position: absolute; top: 0; left: 18px; background: #123524; color: #ffe08a; font: 600 11px 'Poppins', 'Noto Sans Devanagari', sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 0 0 10px 10px; }
+.offer-badge { position: absolute; top: 14px; right: 14px; background: linear-gradient(135deg, #ff5a3c, #d62828); color: #fff; font: 700 13px 'Poppins', 'Noto Sans Devanagari', sans-serif; padding: 4px 12px; border-radius: 999px; box-shadow: 0 4px 10px rgba(214, 40, 40, 0.35); }
+.offer-emoji { font-size: 38px; line-height: 1; }
+.offer h3 { font-size: 20px; }
+.offer p { font-size: 14px; color: var(--muted); flex: 1; }
+.offer-note { text-align: center; font-size: 13px; color: var(--muted); margin-top: 22px; }
+
 /* Scrap banner */
 .scrap { background: linear-gradient(135deg, #1f2430, #2f3646); color: #fff; padding: 44px 0; }
 .scrap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }

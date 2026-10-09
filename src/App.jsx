@@ -2,6 +2,7 @@ import Header from './components/Header.jsx'
 import Festival from './components/Festival.jsx'
 import Hero from './components/Hero.jsx'
 import Brands from './components/Brands.jsx'
+import Offers from './components/Offers.jsx'
 import Products from './components/Products.jsx'
 import Scrap from './components/Scrap.jsx'
 import GiftIdeas from './components/GiftIdeas.jsx'
@@ -23,6 +24,7 @@ export default function App() {
         <Festival />
         <Hero />
         <Brands />
+        <Offers />
         <Products />
         <GiftIdeas />
         <OrderSteps />

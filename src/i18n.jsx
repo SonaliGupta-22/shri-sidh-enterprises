@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 const ui = {
   nav: {
+    offers: { en: 'Offers', hi: 'ऑफर' },
     products: { en: 'Products', hi: 'उत्पाद' },
     why: { en: 'Why Us', hi: 'हमें क्यों चुनें' },
     about: { en: 'About', hi: 'हमारे बारे में' },

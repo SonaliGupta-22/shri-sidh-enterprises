@@ -201,3 +201,29 @@ export const faq = {
       a: { en: 'Yes. Bring your old utensils or scrap to the shop, or WhatsApp us to know today\'s rate.', hi: 'हाँ। पुराने बर्तन या स्क्रैप दुकान पर लाएँ, या आज का भाव जानने के लिए WhatsApp करें।' } },
   ],
 }
+
+// Sale and offers section. Replace or add REAL offers here.
+// Each offer: emoji, tag (small label), badge (optional gold ribbon, e.g. { en: '10% OFF', hi: '10% छूट' }), title, text.
+// Remove an offer by deleting its block; hide the whole section with enabled: false.
+export const offers = {
+  enabled: true,
+  title: { en: 'Festival Offers & Deals', hi: 'त्योहार ऑफर और डील्स' },
+  sub: { en: 'Diwali and Dhanteras are here. Ask us for the best rates, gift packs and bulk deals.', hi: 'दीपावली और धनतेरस आ गए हैं। सबसे अच्छे भाव, गिफ्ट पैक और थोक डील्स के बारे में पूछें।' },
+  cta: { en: 'Ask on WhatsApp', hi: 'WhatsApp पर पूछें' },
+  waMsg: { en: 'Hello, I want to know about this offer: ', hi: 'नमस्ते, मुझे इस ऑफर के बारे में जानना है: ' },
+  note: { en: 'Offers and rates may change. Call or WhatsApp to confirm today\'s price.', hi: 'ऑफर और भाव बदल सकते हैं। आज का भाव पक्का करने के लिए कॉल या WhatsApp करें।' },
+  items: [
+    { emoji: '🪔', tag: { en: 'Festival', hi: 'त्योहार' },
+      title: { en: 'Festival Rates', hi: 'त्योहारी भाव' },
+      text: { en: 'Ask for festival rates on peetal, steel, copper and kitchen appliances.', hi: 'पीतल, स्टील, तांबे और किचन अप्लायंसेस पर त्योहारी भाव पूछें।' } },
+    { emoji: '📦', tag: { en: 'Bulk', hi: 'थोक' },
+      title: { en: 'Bulk & Wholesale Deals', hi: 'थोक और बल्क डील्स' },
+      text: { en: 'Better rates on bulk orders for weddings, hotels, caterers and shopkeepers.', hi: 'शादी, होटल, केटरर और दुकानदारों के लिए बल्क ऑर्डर पर बेहतर भाव।' } },
+    { emoji: '🎁', tag: { en: 'Gifts', hi: 'गिफ्ट' },
+      title: { en: 'Diwali Gift Sets', hi: 'दीपावली गिफ्ट सेट' },
+      text: { en: 'Brass, kansa, copper and steel gifts. Tell us your budget and we will help you choose.', hi: 'पीतल, कांसा, तांबा और स्टील के गिफ्ट। अपना बजट बताएँ, हम चुनने में मदद करेंगे।' } },
+    { emoji: '♻️', tag: { en: 'Scrap', hi: 'स्क्रैप' },
+      title: { en: 'Old Utensils & Scrap', hi: 'पुराने बर्तन और स्क्रैप' },
+      text: { en: 'Bring your old utensils or scrap and get the rate of the day.', hi: 'पुराने बर्तन या स्क्रैप लाएँ और उस दिन का भाव पाएँ।' } },
+  ],
+}
