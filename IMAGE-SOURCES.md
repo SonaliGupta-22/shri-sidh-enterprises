@@ -19,6 +19,7 @@ These photos come from the brands' own websites and belong to those brands. They
 | non-stick-kadhai-tawa.jpg | https://vinodcookware.com/products/vinod-zest-non-stick-deep-kadai-induction-friendly |
 | steel-gift-sets.jpg | https://vinodcookware.com/products/vinod-grandior-triply-sets |
 | steel-tiffin-box-3-tier.jpg | https://myborosil.com/products/borosil-superfresh-microwavable-stainless-steel-lunchbox-set-of-3-310ml-vertical-bag |
+| otg-oven-toaster-griller.jpg | https://myborosil.com/products/borosil-pro-40l-oven-toaster-griller-otg-1800-w |
 
 ## Computer-rendered pictures (made for this site)
 

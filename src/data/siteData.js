@@ -112,6 +112,9 @@ export const products = [
   { id: 11, category: 'Electronics', emoji: '🥪',
     name: { en: 'Sandwich Maker & Toaster', hi: 'सैंडविच मेकर और टोस्टर' },
     desc: { en: 'Quick breakfast makers for the whole family.', hi: 'पूरे परिवार के लिए झटपट नाश्ता।' } },
+  { id: 23, category: 'Electronics', emoji: '🍞',
+    name: { en: 'OTG (Oven Toaster Griller)', hi: 'ओटीजी (ओवन टोस्टर ग्रिलर)' },
+    desc: { en: 'Bake, toast and grill cakes, pizzas and snacks at home.', hi: 'घर पर केक, पिज़्ज़ा और स्नैक्स बेक, टोस्ट और ग्रिल करें।' } },
 
   // Steel
   { id: 12, category: 'Steel', emoji: '🍽️',
