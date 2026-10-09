@@ -155,3 +155,47 @@ export const features = [
     title: { en: 'Wholesale & Scrap', hi: 'थोक और स्क्रैप' },
     text: { en: 'Wholesale deals for shops, hotels and caterers, and we buy scrap too.', hi: 'दुकानदारों, होटल और केटरर के लिए थोक सौदे, और हम स्क्रैप भी खरीदते हैं।' } },
 ]
+
+// "How to order" steps.
+export const orderSteps = {
+  title: { en: 'How to Order', hi: 'ऑर्डर कैसे करें' },
+  steps: [
+    { title: { en: 'Choose', hi: 'चुनें' },
+      text: { en: 'Browse the products here, or visit the shop in Kotla.', hi: 'यहाँ उत्पाद देखें, या कोटला में दुकान पर आएँ।' } },
+    { title: { en: 'Ask', hi: 'पूछें' },
+      text: { en: 'WhatsApp or call us for today\'s price and availability.', hi: 'आज का भाव और उपलब्धता जानने के लिए WhatsApp या कॉल करें।' } },
+    { title: { en: 'Collect', hi: 'प्राप्त करें' },
+      text: { en: 'Pick up from the shop. For bulk orders, tell us the occasion and quantity.', hi: 'दुकान से ले जाएँ। बल्क ऑर्डर के लिए अवसर और मात्रा बताएँ।' } },
+  ],
+}
+
+// Gift ideas by occasion. Each button opens WhatsApp with the occasion filled in.
+export const giftIdeas = {
+  title: { en: 'Gift Ideas by Occasion', hi: 'अवसर के अनुसार गिफ्ट' },
+  sub: { en: 'Brass, kansa, copper and steel gifts. Tell us the occasion and budget and we will help you choose.', hi: 'पीतल, कांसा, तांबा और स्टील के गिफ्ट। अवसर और बजट बताएँ, हम चुनने में मदद करेंगे।' },
+  cta: { en: 'Ask on WhatsApp', hi: 'WhatsApp पर पूछें' },
+  waMsg: { en: 'Hello, I am looking for a gift for: ', hi: 'नमस्ते, मुझे इस अवसर के लिए गिफ्ट चाहिए: ' },
+  items: [
+    { emoji: '🪔', name: { en: 'Diwali & Dhanteras', hi: 'दीपावली और धनतेरस' }, text: { en: 'New utensils and pooja items for a prosperous festival.', hi: 'समृद्ध त्योहार के लिए नए बर्तन और पूजा का सामान।' } },
+    { emoji: '💍', name: { en: 'Weddings', hi: 'शादी' }, text: { en: 'Dinner sets, thali sets and return gifts for guests.', hi: 'डिनर सेट, थाली सेट और मेहमानों के लिए रिटर्न गिफ्ट।' } },
+    { emoji: '🏠', name: { en: 'Housewarming', hi: 'गृहप्रवेश' }, text: { en: 'Kitchen starter sets and brass pooja items.', hi: 'रसोई के शुरुआती सेट और पीतल का पूजा सामान।' } },
+    { emoji: '🎂', name: { en: 'Birthdays & Anniversaries', hi: 'जन्मदिन और सालगिरह' }, text: { en: 'Copper bottles, kansa sets and steel gift packs.', hi: 'तांबे की बोतल, कांसे के सेट और स्टील गिफ्ट पैक।' } },
+    { emoji: '🎁', name: { en: 'Corporate Gifting', hi: 'कॉर्पोरेट गिफ्ट' }, text: { en: 'Bulk gift items for staff, clients and events.', hi: 'स्टाफ, ग्राहकों और कार्यक्रमों के लिए बल्क गिफ्ट।' } },
+  ],
+}
+
+// FAQ. "kind" tells the component to build the answer from other data (address, hours, brands).
+export const faq = {
+  title: { en: 'Frequently Asked Questions', hi: 'अक्सर पूछे जाने वाले सवाल' },
+  items: [
+    { q: { en: 'Where is the shop?', hi: 'दुकान कहाँ है?' }, kind: 'address' },
+    { q: { en: 'What are the shop timings?', hi: 'दुकान का समय क्या है?' }, kind: 'hours' },
+    { q: { en: 'Which brands do you sell?', hi: 'आप कौन से ब्रांड बेचते हैं?' }, kind: 'brands' },
+    { q: { en: 'How do I know the price?', hi: 'कीमत कैसे पता करें?' },
+      a: { en: 'Prices change with the market rate, especially for brass and copper. Call or WhatsApp us for today\'s price.', hi: 'दाम बाज़ार भाव के अनुसार बदलते हैं, खासकर पीतल और तांबे के। आज का भाव जानने के लिए कॉल या WhatsApp करें।' } },
+    { q: { en: 'Do you take bulk orders?', hi: 'क्या आप बल्क ऑर्डर लेते हैं?' },
+      a: { en: 'Yes, for every kind of occasion: weddings, festivals, parties, hotels and catering. Send us the quantity on WhatsApp for wholesale rates.', hi: 'हाँ, हर तरह के अवसर के लिए: शादी, त्योहार, पार्टी, होटल और केटरिंग। थोक भाव के लिए WhatsApp पर मात्रा बताएँ।' } },
+    { q: { en: 'Do you buy scrap?', hi: 'क्या आप स्क्रैप खरीदते हैं?' },
+      a: { en: 'Yes. Bring your old utensils or scrap to the shop, or WhatsApp us to know today\'s rate.', hi: 'हाँ। पुराने बर्तन या स्क्रैप दुकान पर लाएँ, या आज का भाव जानने के लिए WhatsApp करें।' } },
+  ],
+}

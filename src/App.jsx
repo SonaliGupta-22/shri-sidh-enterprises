@@ -4,6 +4,9 @@ import Hero from './components/Hero.jsx'
 import Brands from './components/Brands.jsx'
 import Products from './components/Products.jsx'
 import Scrap from './components/Scrap.jsx'
+import GiftIdeas from './components/GiftIdeas.jsx'
+import OrderSteps from './components/OrderSteps.jsx'
+import Faq from './components/Faq.jsx'
 import Features from './components/Features.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
@@ -21,9 +24,12 @@ export default function App() {
         <Hero />
         <Brands />
         <Products />
+        <GiftIdeas />
+        <OrderSteps />
         <Scrap />
         <Features />
         <About />
+        <Faq />
         <Contact />
       </main>
       <Footer />

@@ -103,6 +103,27 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 }
 @media (prefers-reduced-motion: reduce) { .rangoli g, .sparkles i { animation: none; } .sparkles i { opacity: 0.8; } }
 
+/* How to order, gift ideas, FAQ */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; list-style: none; margin-top: 34px; counter-reset: none; }
+.step { background: #fff; border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); text-align: center; }
+.step-no { display: grid; place-items: center; width: 44px; height: 44px; margin: 0 auto 12px; border-radius: 50%; background: #123524; color: #f5c04a; font: 700 20px 'Playfair Display', serif; border: 2px solid #f5c04a; }
+.step h3 { font-size: 20px; margin-bottom: 6px; }
+.step p { font-size: 14.5px; color: var(--muted); }
+.gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+.gift { background: var(--card); border-radius: var(--radius); padding: 24px 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 8px; align-items: flex-start; transition: 0.25s; }
+.gift:hover { transform: translateY(-5px); box-shadow: 0 14px 32px rgba(31, 36, 48, 0.14); }
+.gift-emoji { font-size: 40px; line-height: 1; }
+.gift h3 { font-size: 18px; }
+.gift p { font-size: 14px; color: var(--muted); flex: 1; }
+.faq { max-width: 780px; }
+.faq .section-title { margin-bottom: 26px; }
+.faq-item { background: #fff; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 12px; padding: 0 20px; }
+.faq-item summary { cursor: pointer; font-weight: 600; color: var(--dark); padding: 16px 0; list-style: none; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 22px; color: var(--primary); flex: none; }
+.faq-item[open] summary::after { content: '–'; }
+.faq-item p { padding: 0 0 16px; color: var(--text); font-size: 15px; }
+
 /* Scrap banner */
 .scrap { background: linear-gradient(135deg, #1f2430, #2f3646); color: #fff; padding: 44px 0; }
 .scrap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
