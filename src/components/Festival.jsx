@@ -26,12 +26,12 @@ const dots = (n, r, size, fill) =>
 function Rangoli() {
   return (
     <svg className="rangoli" viewBox="-100 -100 200 200" aria-hidden="true">
-      <g className="rg-a">{dots(36, 94, 3, '#ffffff')}{petals(18, -78, 7, 17, '#c2185b')}</g>
+      <g className="rg-a">{dots(36, 94, 3, '#ffffff')}{petals(18, -78, 7, 17, '#ff4081')}</g>
       <g className="rg-b">{petals(18, -60, 9, 15, '#ffd54f', 10)}{dots(18, 46, 2.6, '#ffffff')}</g>
-      <g className="rg-c">{petals(12, -42, 10, 19, '#ffffff')}{petals(12, -28, 7, 13, '#e65100', 15)}</g>
+      <g className="rg-c">{petals(12, -42, 10, 19, '#ffffff')}{petals(12, -28, 7, 13, '#ff9100', 15)}</g>
       <g>
-        {petals(8, -15, 6, 11, '#2e7d32')}
-        <circle r="8" fill="#ffd54f" stroke="#c2185b" strokeWidth="2" />
+        {petals(8, -15, 6, 11, '#69f0ae')}
+        <circle r="8" fill="#ffd54f" stroke="#ff4081" strokeWidth="2" />
       </g>
     </svg>
   )
@@ -52,7 +52,7 @@ export default function Festival() {
           <h2>{pick(festival.title)}</h2>
           <p>{pick(festival.text)}</p>
           <div className="festival-actions">
-            <a className="btn btn-white" href="#products">{pick(festival.ctaShop)}</a>
+            <a className="btn btn-gold" href="#products">{pick(festival.ctaShop)}</a>
             <a
               className="btn btn-ghost"
               target="_blank"
