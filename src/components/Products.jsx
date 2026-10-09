@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { products, categories, business } from '../data/siteData.js'
 import { useLang } from '../i18n.jsx'
 
@@ -7,6 +7,13 @@ export default function Products() {
   const [query, setQuery] = useState('')
   const { lang, pick, ui } = useLang()
   const t = ui.products
+
+  // Lets the hero tiles open a category here.
+  useEffect(() => {
+    const onSelect = (e) => { setCategory(e.detail); setQuery('') }
+    window.addEventListener('select-category', onSelect)
+    return () => window.removeEventListener('select-category', onSelect)
+  }, [])
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()

@@ -14,6 +14,7 @@ const ui = {
       en: 'Authorised Borosil distributor and dealer of Prestige, Hawkins, Bajaj, Havells, Kraft and more. All types of gift items in brass, kansa, copper and steel.',
       hi: 'बोरोसिल के अधिकृत वितरक और प्रेस्टीज, हॉकिन्स, बजाज, हैवेल्स, क्राफ्ट आदि के अधिकृत डीलर। पीतल, कांसा, तांबा और स्टील में हर तरह के गिफ्ट आइटम।',
     },
+    explore: { en: 'Explore our range', hi: 'हमारी रेंज देखें' },
     browse: { en: 'Browse Products', hi: 'उत्पाद देखें' },
     quote: { en: 'Get a Quote', hi: 'कोटेशन पाएँ' },
     highlights: [
@@ -89,6 +90,14 @@ const ui = {
   },
   footer: { rights: { en: 'All rights reserved.', hi: 'सर्वाधिकार सुरक्षित।' } },
   floatMsg: { en: 'Hello, I would like to enquire about your utensils.', hi: 'नमस्ते, मुझे आपके बर्तनों के बारे में पूछना है।' },
+}
+
+// Category names used by the hero tiles (same wording as the product filter chips).
+ui.catLabels = {
+  Peetal: { en: 'Peetal (Brass)', hi: 'पीतल' },
+  Steel: { en: 'Steel', hi: 'स्टील' },
+  Gifts: { en: 'Gift Items', hi: 'गिफ्ट आइटम' },
+  Electronics: { en: 'Electronics', hi: 'इलेक्ट्रॉनिक्स' },
 }
 
 const LangContext = createContext(null)

@@ -49,12 +49,20 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .hero-stats { display: flex; gap: 32px; list-style: none; flex-wrap: wrap; }
 .hero-stats strong { display: block; font: 700 24px 'Playfair Display', serif; color: var(--primary-dark); }
 .hero-stats span { font-size: 13px; color: var(--muted); }
-.hero-art { display: grid; place-items: center; }
-.circle { position: relative; width: min(380px, 80vw); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #fff 0%, #fbe9c4 100%); box-shadow: var(--shadow); }
-.float { position: absolute; font-size: clamp(48px, 9vw, 84px); animation: float 4s ease-in-out infinite; }
-.f1 { top: 12%; left: 14%; } .f2 { top: 14%; right: 12%; animation-delay: 0.6s; }
-.f3 { bottom: 12%; left: 16%; animation-delay: 1.2s; } .f4 { bottom: 14%; right: 14%; animation-delay: 1.8s; }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+/* Hero category panel */
+.hero-panel { background: #14171f; border: 1px solid rgba(245, 192, 74, 0.45); border-radius: 22px; padding: 24px; box-shadow: 0 18px 40px rgba(31, 36, 48, 0.25); }
+.panel-title { color: #f5c04a; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2.5px; margin-bottom: 16px; }
+.panel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.panel-tile { display: flex; flex-direction: column; gap: 4px; padding: 18px 16px; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(245, 192, 74, 0.22); color: #fff3d6; transition: 0.2s; }
+.panel-tile:hover { transform: translateY(-4px); background: rgba(245, 192, 74, 0.1); border-color: #f5c04a; }
+.panel-icon { width: 44px; height: 44px; color: #f5c04a; margin-bottom: 8px; }
+.panel-icon svg { width: 100%; height: 100%; display: block; }
+.panel-tile strong { font: 600 16px 'Poppins', 'Noto Sans Devanagari', sans-serif; color: #fff; }
+.panel-tile small { font-size: 12.5px; color: #b9bfcc; line-height: 1.4; }
+.panel-foot { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(245, 192, 74, 0.25); color: #e6e9f0; font-size: 14px; }
+.panel-foot b { color: #f5c04a; }
+.panel-check { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #f5c04a; color: #14171f; font-size: 13px; font-weight: 700; flex: none; }
 
 /* Festival banner */
 .festival { position: relative; overflow: hidden; color: #fff3d6; padding: 0 0 36px; background: radial-gradient(ellipse at 50% 0%, #a3260f 0%, #6b130c 45%, #3c0a0e 100%); border-bottom: 3px solid #f5c04a; }
