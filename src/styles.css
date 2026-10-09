@@ -114,6 +114,24 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .faq-item[open] summary::after { content: '–'; }
 .faq-item p { padding: 0 0 16px; color: var(--text); font-size: 15px; }
 
+/* Pages: tabs, nav state, visit band, footer links */
+.nav a[aria-current='page']:not(.btn) { color: var(--primary); font-weight: 600; }
+.tabs-bar { background: var(--alt); border-bottom: 1px solid #eadfc6; padding: 14px 0; }
+.tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.tab { padding: 9px 22px; border-radius: 999px; background: #fff; border: 1.5px solid #e5dcc9; font-weight: 500; font-size: 14.5px; transition: 0.2s; }
+.tab:hover { border-color: var(--primary); }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.visit { background: linear-gradient(120deg, #1a4a33, #123524 55%, #0c2418); color: #eaf6ef; padding: 44px 0; border-top: 3px solid #f5c04a; }
+.visit-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.visit h2 { font-size: clamp(24px, 3.6vw, 32px); color: #ffe08a; margin-bottom: 8px; }
+.visit p { font-size: 15px; margin-top: 4px; max-width: 60ch; }
+.visit-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.visit .btn-gold { background: linear-gradient(135deg, #ffe08a, #f0a82e); color: #123524; border-color: #f0a82e; font-weight: 600; }
+.visit .btn-ghost { background: transparent; color: #ffe08a; border-color: #ffe08a; }
+.visit .btn-ghost:hover { background: rgba(255, 224, 138, 0.15); }
+.footer-links { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; font-size: 14px; }
+.footer-links a:hover { color: #ffe08a; }
+
 /* Full range catalogue */
 .more-range { text-align: center; margin-top: 30px; font-weight: 500; }
 .more-range a { color: var(--primary); border-bottom: 2px solid rgba(184, 115, 14, 0.35); padding-bottom: 2px; }
@@ -271,3 +289,5 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .photo-credits summary { cursor: pointer; display: inline-block; }
 .photo-credits ul { list-style: none; margin-top: 6px; }
 .photo-credits a { color: #cfd3dc; text-decoration: underline; }
+.more-range .btn { color: #fff; border-bottom: 2px solid var(--primary); padding: 12px 28px; display: inline-block; }
+.more-range .btn:hover { color: #fff; }

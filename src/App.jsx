@@ -1,40 +1,32 @@
 import Header from './components/Header.jsx'
-import Festival from './components/Festival.jsx'
-import Hero from './components/Hero.jsx'
-import Brands from './components/Brands.jsx'
-import Offers from './components/Offers.jsx'
-import Products from './components/Products.jsx'
-import Scrap from './components/Scrap.jsx'
-import Catalogue from './components/Catalogue.jsx'
-import GiftIdeas from './components/GiftIdeas.jsx'
-import OrderSteps from './components/OrderSteps.jsx'
-import Faq from './components/Faq.jsx'
-import Features from './components/Features.jsx'
-import About from './components/About.jsx'
-import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+import OffersPage from './pages/OffersPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 import { business } from './data/siteData.js'
 import { useLang } from './i18n.jsx'
+import { useRoute } from './router.jsx'
+
+const pages = {
+  '/': Home,
+  '/products': ProductsPage,
+  '/products/range': ProductsPage,
+  '/offers': OffersPage,
+  '/about': AboutPage,
+  '/contact': ContactPage,
+}
 
 export default function App() {
   const { pick, ui } = useLang()
+  const { path } = useRoute()
+  const Page = pages[path] ?? Home
   return (
     <>
       <Header />
       <main>
-        <Festival />
-        <Hero />
-        <Brands />
-        <Offers />
-        <Products />
-        <Catalogue />
-        <GiftIdeas />
-        <OrderSteps />
-        <Scrap />
-        <Features />
-        <About />
-        <Faq />
-        <Contact />
+        <Page />
       </main>
       <Footer />
       <a

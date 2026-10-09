@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { business } from '../data/siteData.js'
 import { useLang } from '../i18n.jsx'
+import { Link } from '../router.jsx'
 
 const links = [
-  ['offers', '#offers'],
-  ['products', '#products'],
-  ['range', '#catalogue'],
-  ['why', '#why'],
-  ['about', '#about'],
-  ['contact', '#contact'],
+  ['home', '/'],
+  ['products', '/products'],
+  ['offers', '/offers'],
+  ['about', '/about'],
+  ['contact', '/contact'],
 ]
 
 export default function Header() {
@@ -24,13 +24,13 @@ export default function Header() {
         <span className="bless-orn" aria-hidden="true">ॐ</span>
       </div>
       <div className="container header-inner">
-        <a href="#top" className="logo">
+        <Link to="/" className="logo" onClick={() => setOpen(false)}>
           <img className="logo-img" src="/logo.svg" alt="" width="46" height="46" />
           <span>{pick(business.name)}</span>
-        </a>
+        </Link>
         <nav className={`nav ${open ? 'open' : ''}`}>
-          {links.map(([key, href]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>{pick(ui.nav[key])}</a>
+          {links.map(([key, to]) => (
+            <Link key={to} to={to} onClick={() => setOpen(false)}>{pick(ui.nav[key])}</Link>
           ))}
           <div className="lang-toggle" role="group" aria-label="Language">
             <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>EN</button>

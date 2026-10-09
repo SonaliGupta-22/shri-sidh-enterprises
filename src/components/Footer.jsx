@@ -1,12 +1,18 @@
 import { business } from '../data/siteData.js'
 import credits from '../data/photoCredits.json'
 import { useLang } from '../i18n.jsx'
+import { Link } from '../router.jsx'
 
 export default function Footer() {
   const { pick, ui } = useLang()
   return (
     <footer className="footer">
       <div className="container">
+        <nav className="footer-links" aria-label="Footer">
+          {[['home', '/'], ['products', '/products'], ['offers', '/offers'], ['about', '/about'], ['contact', '/contact']].map(([k, to]) => (
+            <Link key={to} to={to}>{pick(ui.nav[k])}</Link>
+          ))}
+        </nav>
         <p>© {new Date().getFullYear()} {pick(business.name)}. {pick(ui.footer.rights)}</p>
         <p className="footer-credit">{pick(ui.footer.credit)}</p>
         <p className="footer-credit">{pick(ui.footer.render)}</p>

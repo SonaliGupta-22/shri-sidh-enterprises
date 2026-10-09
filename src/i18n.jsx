@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 const ui = {
   nav: {
+    home: { en: 'Home', hi: 'होम' },
     offers: { en: 'Offers', hi: 'ऑफर' },
     products: { en: 'Products', hi: 'उत्पाद' },
     range: { en: 'Full Range', hi: 'पूरी रेंज' },
@@ -37,6 +38,10 @@ const ui = {
     empty: { en: 'No products found. Try a different search.', hi: 'कोई उत्पाद नहीं मिला। दूसरा शब्द खोजें।' },
     enquire: { en: 'Enquire on WhatsApp', hi: 'WhatsApp पर पूछें' },
     more: { en: 'Looking for something else? See our full range', hi: 'कुछ और चाहिए? हमारी पूरी रेंज देखें' },
+    featuredTitle: { en: 'Popular Products', hi: 'लोकप्रिय उत्पाद' },
+    seeAll: { en: 'See All Products', hi: 'सभी उत्पाद देखें' },
+    tabFeatured: { en: 'Products with Photos', hi: 'फोटो वाले उत्पाद' },
+    tabRange: { en: 'Full Range (183 items)', hi: 'पूरी रेंज (183 आइटम)' },
     waMsg: { en: 'Hello, I want to know the price of: ', hi: 'नमस्ते, मुझे इसकी कीमत जाननी है: ' },
   },
   wholesale: {
@@ -65,6 +70,7 @@ const ui = {
     cta: { en: 'Ask Scrap Rate on WhatsApp', hi: 'WhatsApp पर स्क्रैप का भाव पूछें' },
     waMsg: { en: 'Hello, I want to sell scrap. Please tell me today\'s rate.', hi: 'नमस्ते, मुझे स्क्रैप बेचना है। कृपया आज का भाव बताएँ।' },
   },
+  visit: { title: { en: 'Visit Our Shop', hi: 'हमारी दुकान पर आएँ' } },
   why: { title: { en: 'Why Choose Us', hi: 'हमें क्यों चुनें' } },
   about: {
     title: { en: 'About Shri Sidh Enterprises', hi: 'श्री सिद्ध एंटरप्राइजेज के बारे में' },

@@ -230,3 +230,6 @@ export const offers = {
       text: { en: 'Bring your old utensils or scrap and get the rate of the day.', hi: 'पुराने बर्तन या स्क्रैप लाएँ और उस दिन का भाव पाएँ।' } },
   ],
 }
+
+// Products shown on the home page (by id). The Products page shows all of them.
+export const featuredIds = [1, 2, 3, 19, 7, 8, 15, 21]

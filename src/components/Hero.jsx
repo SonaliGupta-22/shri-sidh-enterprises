@@ -1,5 +1,6 @@
 import { business } from '../data/siteData.js'
 import { useLang } from '../i18n.jsx'
+import { Link, pending } from '../router.jsx'
 
 const stroke = { fill: 'none', stroke: 'currentColor', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' }
 
@@ -49,8 +50,8 @@ const orbitItems = [
 export default function Hero() {
   const { pick, ui } = useLang()
   const h = ui.hero
-  // Tells the Products section which category to show, then the #products link scrolls to it.
-  const choose = (id) => window.dispatchEvent(new CustomEvent('select-category', { detail: id }))
+  // Remembers which category to open, then the link takes the visitor to the Products page.
+  const choose = (id) => { pending.category = id }
 
   return (
     <section className="hero" id="top">
@@ -60,8 +61,8 @@ export default function Hero() {
           <h1>{pick(business.tagline)}</h1>
           <p>{pick(h.text)}</p>
           <div className="hero-actions">
-            <a href="#products" className="btn">{pick(h.browse)}</a>
-            <a href="#contact" className="btn btn-outline">{pick(h.quote)}</a>
+            <Link to="/products" className="btn">{pick(h.browse)}</Link>
+            <Link to="/contact" className="btn btn-outline">{pick(h.quote)}</Link>
           </div>
           <ul className="hero-stats">
             {h.highlights.map((s) => (
@@ -76,15 +77,15 @@ export default function Hero() {
             <div className="orbit-spin">
               {orbitItems.map(({ id, angle }) => (
                 <div key={id} className="orbit-slot" style={{ '--a': `${angle}deg` }}>
-                  <a
-                    href="#products"
+                  <Link
+                    to="/products"
                     className="orbit-bubble"
                     style={{ '--a': `${angle}deg` }}
                     onClick={() => choose(id)}
                   >
                     {icons[id]}
                     <span>{pick(ui.catLabels[id])}</span>
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
