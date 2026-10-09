@@ -38,17 +38,17 @@ const icons = {
   ),
 }
 
-const tiles = [
-  { id: 'Peetal', sub: { en: 'Thali, handi, kadhai', hi: 'थाली, हांडी, कड़ाही' } },
-  { id: 'Steel', sub: { en: 'Dinner sets, tiffins', hi: 'डिनर सेट, टिफिन' } },
-  { id: 'Gifts', sub: { en: 'Brass, kansa, copper', hi: 'पीतल, कांसा, तांबा' } },
-  { id: 'Electronics', sub: { en: 'Induction, mixer grinder', hi: 'इंडक्शन, मिक्सर ग्राइंडर' } },
+// Category badges that orbit the logo, spaced a quarter turn apart.
+const orbitItems = [
+  { id: 'Peetal', angle: 0 },
+  { id: 'Steel', angle: 90 },
+  { id: 'Gifts', angle: 180 },
+  { id: 'Electronics', angle: 270 },
 ]
 
 export default function Hero() {
   const { pick, ui } = useLang()
   const h = ui.hero
-  const label = (id) => pick(ui.catLabels[id])
   // Tells the Products section which category to show, then the #products link scrolls to it.
   const choose = (id) => window.dispatchEvent(new CustomEvent('select-category', { detail: id }))
 
@@ -70,20 +70,30 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-panel">
-          <p className="panel-title">{pick(h.explore)}</p>
-          <div className="panel-grid">
-            {tiles.map((t) => (
-              <a key={t.id} href="#products" className="panel-tile" onClick={() => choose(t.id)}>
-                <span className="panel-icon">{icons[t.id]}</span>
-                <strong>{label(t.id)}</strong>
-                <small>{pick(t.sub)}</small>
-              </a>
-            ))}
+        <div className="hero-orbit">
+          <div className="orbit">
+            <div className="orbit-track" aria-hidden="true" />
+            <div className="orbit-spin">
+              {orbitItems.map(({ id, angle }) => (
+                <div key={id} className="orbit-slot" style={{ '--a': `${angle}deg` }}>
+                  <a
+                    href="#products"
+                    className="orbit-bubble"
+                    style={{ '--a': `${angle}deg` }}
+                    onClick={() => choose(id)}
+                  >
+                    {icons[id]}
+                    <span>{pick(ui.catLabels[id])}</span>
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div className="orbit-core">
+              <img src="/logo.svg" alt={pick(business.name)} width="132" height="132" />
+            </div>
           </div>
-          <div className="panel-foot">
-            <span className="panel-check" aria-hidden="true">✓</span>
-            <span>{pick(ui.brands.distributor)}: <b>Borosil</b></span>
+          <div className="orbit-chip">
+            {pick(ui.brands.distributor)}: <b>Borosil</b>
           </div>
         </div>
       </div>

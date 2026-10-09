@@ -92,11 +92,11 @@ const ui = {
   floatMsg: { en: 'Hello, I would like to enquire about your utensils.', hi: 'नमस्ते, मुझे आपके बर्तनों के बारे में पूछना है।' },
 }
 
-// Category names used by the hero tiles (same wording as the product filter chips).
+// Short category names for the orbiting badges in the hero (they must fit inside a small circle).
 ui.catLabels = {
-  Peetal: { en: 'Peetal (Brass)', hi: 'पीतल' },
+  Peetal: { en: 'Peetal', hi: 'पीतल' },
   Steel: { en: 'Steel', hi: 'स्टील' },
-  Gifts: { en: 'Gift Items', hi: 'गिफ्ट आइटम' },
+  Gifts: { en: 'Gifts', hi: 'गिफ्ट' },
   Electronics: { en: 'Electronics', hi: 'इलेक्ट्रॉनिक्स' },
 }
 
