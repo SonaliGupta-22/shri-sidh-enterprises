@@ -6,17 +6,13 @@ import { useLang } from '../i18n.jsx'
 // Put the photo in public/images/products/. A product can also set  image: '/images/...'  to use any other file.
 export const photoSlug = (p) => p.name.en.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
+// Tries a real photo (.jpg) first, then the drawn illustration (.svg), then the icon.
 function ProductImage({ p, alt }) {
-  const [failed, setFailed] = useState(false)
-  if (failed) return <span className="card-emoji">{p.emoji}</span>
-  return (
-    <img
-      src={p.image || `/images/products/${photoSlug(p)}.jpg`}
-      alt={alt}
-      loading="lazy"
-      onError={() => setFailed(true)}
-    />
-  )
+  const slug = photoSlug(p)
+  const sources = [p.image, `/images/products/${slug}.jpg`, `/images/products/${slug}.svg`].filter(Boolean)
+  const [i, setI] = useState(0)
+  if (i >= sources.length) return <span className="card-emoji">{p.emoji}</span>
+  return <img src={sources[i]} alt={alt} loading="lazy" onError={() => setI(i + 1)} />
 }
 
 export default function Products() {
