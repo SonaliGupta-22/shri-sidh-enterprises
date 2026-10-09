@@ -26,12 +26,12 @@ const dots = (n, r, size, fill) =>
 function Rangoli() {
   return (
     <svg className="rangoli" viewBox="-100 -100 200 200" aria-hidden="true">
-      <g className="rg-a">{dots(36, 94, 3, '#ffffff')}{petals(18, -78, 7, 17, '#ff4081')}</g>
+      <g className="rg-a">{dots(36, 94, 3, '#ffffff')}{petals(18, -78, 7, 17, '#e91e63')}</g>
       <g className="rg-b">{petals(18, -60, 9, 15, '#ffd54f', 10)}{dots(18, 46, 2.6, '#ffffff')}</g>
-      <g className="rg-c">{petals(12, -42, 10, 19, '#ffffff')}{petals(12, -28, 7, 13, '#ff9100', 15)}</g>
+      <g className="rg-c">{petals(12, -42, 10, 19, '#ffffff')}{petals(12, -28, 7, 13, '#ff8f00', 15)}</g>
       <g>
-        {petals(8, -15, 6, 11, '#69f0ae')}
-        <circle r="8" fill="#ffd54f" stroke="#ff4081" strokeWidth="2" />
+        {petals(8, -15, 6, 11, '#00bfa5')}
+        <circle r="8" fill="#ffd54f" stroke="#e91e63" strokeWidth="2" />
       </g>
     </svg>
   )
