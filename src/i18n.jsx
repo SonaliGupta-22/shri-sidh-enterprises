@@ -9,20 +9,23 @@ const ui = {
     call: { en: 'Call Now', hi: 'कॉल करें' },
   },
   hero: {
-    badge: { en: 'Peetal • Steel • Cookware • Electronics', hi: 'पीतल • स्टील • कुकवेयर • इलेक्ट्रॉनिक्स' },
+    badge: { en: 'Brass • Kansa • Copper • Steel • Gifts', hi: 'पीतल • कांसा • तांबा • स्टील • गिफ्ट' },
     text: {
-      en: 'Shri Sidh Enterprises brings you peetal utensils, trusted brands like Borosil and Kraft, and kitchen electronics such as induction cooktops and mixer grinders.',
-      hi: 'श्री सिद्ध एंटरप्राइजेज में पाएँ पीतल के बर्तन, बोरोसिल और क्राफ्ट जैसे भरोसेमंद ब्रांड, और इंडक्शन कुकटॉप व मिक्सर ग्राइंडर जैसे किचन इलेक्ट्रॉनिक्स।',
+      en: 'Authorised Borosil distributor and dealer of Prestige, Hawkins, Bajaj, Havells, Kraft and more. All types of gift items in brass, kansa, copper and steel.',
+      hi: 'बोरोसिल के अधिकृत वितरक और प्रेस्टीज, हॉकिन्स, बजाज, हैवेल्स, क्राफ्ट आदि के अधिकृत डीलर। पीतल, कांसा, तांबा और स्टील में हर तरह के गिफ्ट आइटम।',
     },
     browse: { en: 'Browse Products', hi: 'उत्पाद देखें' },
     quote: { en: 'Get a Quote', hi: 'कोटेशन पाएँ' },
     highlights: [
       { title: { en: 'Peetal', hi: 'पीतल' }, sub: { en: 'Full Range', hi: 'पूरी रेंज' } },
-      { title: { en: 'Borosil • Kraft', hi: 'Borosil • Kraft' }, sub: { en: 'Trusted Brands', hi: 'भरोसेमंद ब्रांड' } },
+      { title: { en: 'Borosil', hi: 'Borosil' }, sub: { en: 'Authorised Distributor', hi: 'अधिकृत वितरक' } },
       { title: { en: 'Wholesale', hi: 'थोक' }, sub: { en: '& Retail Deals', hi: 'और खुदरा सौदे' } },
     ],
   },
-  brands: { label: { en: 'Brands We Sell', hi: 'हमारे ब्रांड' } },
+  brands: {
+    distributor: { en: 'Authorised Distributor', hi: 'अधिकृत वितरक' },
+    dealer: { en: 'Authorised Dealer', hi: 'अधिकृत डीलर' },
+  },
   products: {
     title: { en: 'Our Products', hi: 'हमारे उत्पाद' },
     sub: { en: 'Find the perfect utensil for your kitchen, pooja room or business.', hi: 'अपनी रसोई, पूजा घर या व्यापार के लिए सही बर्तन चुनें।' },

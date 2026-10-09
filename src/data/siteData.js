@@ -10,21 +10,26 @@ export const business = {
   phones: ['+91 96277 00061', '+91 88946 64222'], // shown in Contact; first one is used for Call Now
   whatsapp: '919627700061',      // country code + number, no + or spaces
   email: '', // add a real email here to show it in Contact (left empty = hidden)
-  mapsQuery: 'Main Market Kotla, near PNB Bank, Kotla, Kangra, Himachal Pradesh',
+  mapsQuery: 'Main Bazar Kotla, near PNB Bank, Jawali, Kangra, Himachal Pradesh 176205',
   address: {
-    en: 'Main Market Kotla, near PNB Bank, VPO Kotla, Distt. Kangra, Himachal Pradesh',
-    hi: 'मेन मार्केट कोटला, पीएनबी बैंक के पास, वीपीओ कोटला, ज़िला कांगड़ा, हिमाचल प्रदेश',
+    en: 'Main Bazar Kotla, near PNB Bank, Teh. Jawali, Distt. Kangra, Himachal Pradesh - 176205',
+    hi: 'मेन बाज़ार कोटला, पीएनबी बैंक के पास, तहसील जवाली, ज़िला कांगड़ा, हिमाचल प्रदेश - 176205',
   },
   hours: { en: 'Mon - Sat: 9:30 AM - 8:00 PM', hi: 'सोम - शनि: सुबह 9:30 - रात 8:00' },
   sunday: { en: 'Sunday: Closed', hi: 'रविवार: बंद' },
 }
 
-// Add or remove brand names here - they show in the "Brands We Sell" strip.
-export const brands = ['Borosil', 'Kraft']
+// Brand names shown in the brands strip (from the shop's visiting card).
+export const distributorBrands = ['Borosil Ltd.']
+export const dealerBrands = [
+  'Vinod Intelligent Cookware', 'Kraft', 'Banjour', 'Trueware', 'Hawkins',
+  'Prestige', 'Bajaj', 'Havells', 'FnS', 'JCPL', 'Lilly',
+]
 
 export const categories = [
   { id: 'All', label: { en: 'All', hi: 'सभी' } },
   { id: 'Peetal', label: { en: 'Peetal (Brass)', hi: 'पीतल' } },
+  { id: 'Gifts', label: { en: 'Gift Items', hi: 'गिफ्ट आइटम' } },
   { id: 'Steel', label: { en: 'Steel', hi: 'स्टील' } },
   { id: 'Cookware', label: { en: 'Cookware', hi: 'कुकवेयर' } },
   { id: 'Electronics', label: { en: 'Electronics', hi: 'इलेक्ट्रॉनिक्स' } },
@@ -61,6 +66,20 @@ export const products = [
   { id: 6, category: 'Peetal', emoji: '🏺', tag: tags.wholesale,
     name: { en: 'Peetal Bhagona / Degchi', hi: 'पीतल भगोना / देगची' },
     desc: { en: 'Large peetal vessels for weddings and catering.', hi: 'शादी और केटरिंग के लिए बड़े पीतल के बर्तन।' } },
+
+  // Gift items (brass, kansa, copper, steel)
+  { id: 19, category: 'Gifts', emoji: '🎁', tag: tags.popular,
+    name: { en: 'Brass Gift Items', hi: 'पीतल के गिफ्ट आइटम' },
+    desc: { en: 'Brass gift sets and showpieces for weddings, festivals and housewarming.', hi: 'शादी, त्योहार और गृहप्रवेश के लिए पीतल के गिफ्ट सेट और शोपीस।' } },
+  { id: 20, category: 'Gifts', emoji: '🥣',
+    name: { en: 'Kansa Gift Sets', hi: 'कांसे के गिफ्ट सेट' },
+    desc: { en: 'Kansa thali, bowl and glass sets, loved for health and tradition.', hi: 'कांसे की थाली, कटोरी और गिलास के सेट, सेहत और परंपरा के लिए।' } },
+  { id: 21, category: 'Gifts', emoji: '🫙',
+    name: { en: 'Copper Gift Sets', hi: 'तांबे के गिफ्ट सेट' },
+    desc: { en: 'Copper bottle, jug and glass sets in attractive gift packs.', hi: 'तांबे की बोतल, जग और गिलास के आकर्षक गिफ्ट पैक।' } },
+  { id: 22, category: 'Gifts', emoji: '🍽️',
+    name: { en: 'Steel Gift Sets', hi: 'स्टील के गिफ्ट सेट' },
+    desc: { en: 'Dinner sets, tiffins and containers in steel, ready for gifting.', hi: 'डिनर सेट, टिफिन और कंटेनर, गिफ्ट के लिए तैयार।' } },
 
   // Electronics
   { id: 7, category: 'Electronics', emoji: '🔥', tag: tags.new,
@@ -112,7 +131,7 @@ export const products = [
 export const features = [
   { icon: '✅',
     title: { en: 'Genuine Brands', hi: 'असली ब्रांड' },
-    text: { en: 'Trusted brands like Borosil and Kraft with proper warranty.', hi: 'बोरोसिल और क्राफ्ट जैसे भरोसेमंद ब्रांड, वारंटी के साथ।' } },
+    text: { en: 'Authorised Borosil distributor and dealer of Prestige, Hawkins, Bajaj, Havells and more.', hi: 'बोरोसिल के अधिकृत वितरक और प्रेस्टीज, हॉकिन्स, बजाज, हैवेल्स आदि के अधिकृत डीलर।' } },
   { icon: '🏺',
     title: { en: 'Complete Peetal Range', hi: 'पीतल की पूरी रेंज' },
     text: { en: 'From pooja items to heavy catering vessels, all in peetal.', hi: 'पूजा के सामान से लेकर बड़े केटरिंग बर्तन तक, सब पीतल में।' } },

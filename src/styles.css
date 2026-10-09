@@ -33,7 +33,7 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .header { position: sticky; top: 0; z-index: 50; background: rgba(255, 253, 248, 0.95); backdrop-filter: blur(8px); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .logo { display: flex; align-items: center; gap: 10px; font: 700 20px 'Playfair Display', serif; color: var(--dark); }
-.logo-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff; font-size: 16px; }
+.logo-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #111; border: 2.5px solid #f5c04a; color: #f5c04a; font: 700 14px 'Poppins', sans-serif; letter-spacing: -0.5px; }
 .nav { display: flex; align-items: center; gap: 28px; font-weight: 500; font-size: 15px; }
 .nav a:not(.btn):hover { color: var(--primary); }
 .menu-btn { display: none; background: none; border: 0; font-size: 26px; cursor: pointer; color: var(--dark); }
@@ -101,11 +101,13 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .card-img img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Brands */
-.brands { background: var(--dark); padding: 22px 0; }
-.brands .container { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
-.brands-label { color: #cfd3dc; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
-.brands-list { display: flex; gap: 16px; list-style: none; flex-wrap: wrap; justify-content: center; }
-.brands-list li { font: 700 22px 'Playfair Display', serif; color: #f7e4bf; padding: 4px 22px; border: 1.5px solid rgba(247, 228, 191, 0.35); border-radius: 10px; }
+.brands { background: #14171f; padding: 26px 0; }
+.brands-rows { display: flex; flex-direction: column; gap: 18px; align-items: center; }
+.brands-row { display: flex; align-items: center; justify-content: center; gap: 14px 22px; flex-wrap: wrap; }
+.brands-label { color: #f5c04a; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
+.brands-list { display: flex; gap: 10px; list-style: none; flex-wrap: wrap; justify-content: center; }
+.brands-list li { font: 600 15px 'Poppins', sans-serif; color: #f7e4bf; padding: 5px 16px; border: 1.5px solid rgba(247, 228, 191, 0.3); border-radius: 999px; }
+.brands-list.big li { font: 700 22px 'Playfair Display', serif; padding: 4px 24px; border-color: #f5c04a; color: #fff3d6; }
 
 /* Sections */
 .section { padding: 80px 0; }

@@ -23,7 +23,7 @@ export default function Header() {
       </div>
       <div className="container header-inner">
         <a href="#top" className="logo">
-          <span className="logo-mark">SS</span>
+          <span className="logo-mark">SSE</span>
           <span>{pick(business.name)}</span>
         </a>
         <nav className={`nav ${open ? 'open' : ''}`}>
