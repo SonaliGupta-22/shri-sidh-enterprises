@@ -9,7 +9,7 @@ export const business = {
   blessing: { en: 'Jai Baba Balak Nath Ji', hi: 'जय बाबा बालक नाथ जी' },
   phones: ['+91 96277 00061', '+91 88946 64222'], // shown in Contact; first one is used for Call Now
   whatsapp: '919627700061',      // country code + number, no + or spaces
-  email: 'Adhikari.210@gmail.com', // shown in Contact (leave empty to hide)
+  email: 'Adhikari.217@gmail.com', // shown in Contact (leave empty to hide)
   mapsQuery: 'Main Bazar Kotla, near PNB Bank, Jawali, Kangra, Himachal Pradesh 176205',
   address: {
     en: 'Main Bazar Kotla, near PNB Bank, Teh. Jawali, Distt. Kangra, Himachal Pradesh - 176205',
