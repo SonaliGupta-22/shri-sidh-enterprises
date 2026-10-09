@@ -4,6 +4,7 @@ const ui = {
   nav: {
     offers: { en: 'Offers', hi: 'ऑफर' },
     products: { en: 'Products', hi: 'उत्पाद' },
+    range: { en: 'Full Range', hi: 'पूरी रेंज' },
     why: { en: 'Why Us', hi: 'हमें क्यों चुनें' },
     about: { en: 'About', hi: 'हमारे बारे में' },
     contact: { en: 'Contact', hi: 'संपर्क' },
@@ -35,6 +36,7 @@ const ui = {
     search: { en: 'Search utensils...', hi: 'बर्तन खोजें...' },
     empty: { en: 'No products found. Try a different search.', hi: 'कोई उत्पाद नहीं मिला। दूसरा शब्द खोजें।' },
     enquire: { en: 'Enquire on WhatsApp', hi: 'WhatsApp पर पूछें' },
+    more: { en: 'Looking for something else? See our full range', hi: 'कुछ और चाहिए? हमारी पूरी रेंज देखें' },
     waMsg: { en: 'Hello, I want to know the price of: ', hi: 'नमस्ते, मुझे इसकी कीमत जाननी है: ' },
   },
   wholesale: {

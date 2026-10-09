@@ -114,6 +114,22 @@ h1, h2, h3 { font-family: 'Playfair Display', 'Noto Sans Devanagari', serif; col
 .faq-item[open] summary::after { content: '–'; }
 .faq-item p { padding: 0 0 16px; color: var(--text); font-size: 15px; }
 
+/* Full range catalogue */
+.more-range { text-align: center; margin-top: 30px; font-weight: 500; }
+.more-range a { color: var(--primary); border-bottom: 2px solid rgba(184, 115, 14, 0.35); padding-bottom: 2px; }
+.more-range a:hover { border-color: var(--primary); }
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.cat-card { background: #fff; border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; }
+.cat-card header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cat-icon { font-size: 26px; line-height: 1; }
+.cat-card h3 { font-size: 20px; }
+.cat-card header small { margin-left: auto; font-size: 12px; color: var(--muted); background: var(--alt); padding: 3px 10px; border-radius: 999px; }
+.cat-card ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; flex: 1; align-content: flex-start; }
+.cat-card li a { display: inline-block; font-size: 13.5px; padding: 6px 13px; border-radius: 999px; background: #f6f1e6; border: 1px solid #eadfc6; color: var(--dark); transition: 0.15s; }
+.cat-card li a:hover { background: #123524; border-color: #123524; color: #ffe08a; }
+.cat-ask { align-self: flex-start; font-size: 13.5px; font-weight: 600; color: var(--primary); }
+.cat-ask:hover { text-decoration: underline; }
+
 /* Offers */
 .offers { background: linear-gradient(180deg, #fff8e6, #fdf0cf); border-block: 1px solid #f1dca0; }
 .offer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }

@@ -5,6 +5,7 @@ import { useLang } from '../i18n.jsx'
 const links = [
   ['offers', '#offers'],
   ['products', '#products'],
+  ['range', '#catalogue'],
   ['why', '#why'],
   ['about', '#about'],
   ['contact', '#contact'],

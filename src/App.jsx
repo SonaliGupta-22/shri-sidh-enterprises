@@ -5,6 +5,7 @@ import Brands from './components/Brands.jsx'
 import Offers from './components/Offers.jsx'
 import Products from './components/Products.jsx'
 import Scrap from './components/Scrap.jsx'
+import Catalogue from './components/Catalogue.jsx'
 import GiftIdeas from './components/GiftIdeas.jsx'
 import OrderSteps from './components/OrderSteps.jsx'
 import Faq from './components/Faq.jsx'
@@ -26,6 +27,7 @@ export default function App() {
         <Brands />
         <Offers />
         <Products />
+        <Catalogue />
         <GiftIdeas />
         <OrderSteps />
         <Scrap />

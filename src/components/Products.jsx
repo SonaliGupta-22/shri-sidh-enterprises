@@ -98,6 +98,7 @@ export default function Products() {
             ))}
           </div>
         )}
+        <p className="more-range"><a href="#catalogue">{pick(t.more)} ↓</a></p>
       </div>
     </section>
   )
