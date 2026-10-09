@@ -91,6 +91,10 @@ const ui = {
   footer: {
     rights: { en: 'All rights reserved.', hi: 'सर्वाधिकार सुरक्षित।' },
     photos: { en: 'Photo credits', hi: 'फोटो क्रेडिट' },
+    render: {
+      en: 'Pictures of peetal, kansa and steel thali items are computer-made illustrations. Actual products may vary slightly.',
+      hi: 'पीतल, कांसा और स्टील थाली के सामान की तस्वीरें कंप्यूटर से बनी हैं। असली सामान थोड़ा अलग हो सकता है।',
+    },
     credit: {
       en: 'Some product images are courtesy of Borosil and Vinod. Brand names and images belong to their owners.',
       hi: 'कुछ उत्पादों की तस्वीरें बोरोसिल और विनोद के सौजन्य से। ब्रांड नाम और तस्वीरें उनके स्वामियों की हैं।',

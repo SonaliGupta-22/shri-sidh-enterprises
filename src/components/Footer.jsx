@@ -9,6 +9,7 @@ export default function Footer() {
       <div className="container">
         <p>© {new Date().getFullYear()} {pick(business.name)}. {pick(ui.footer.rights)}</p>
         <p className="footer-credit">{pick(ui.footer.credit)}</p>
+        <p className="footer-credit">{pick(ui.footer.render)}</p>
         {credits.length > 0 && (
           <details className="footer-credit photo-credits">
             <summary>{pick(ui.footer.photos)}</summary>

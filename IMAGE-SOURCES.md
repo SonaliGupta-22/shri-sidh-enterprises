@@ -19,3 +19,7 @@ These photos come from the brands' own websites and belong to those brands. They
 | non-stick-kadhai-tawa.jpg | https://vinodcookware.com/products/vinod-zest-non-stick-deep-kadai-induction-friendly |
 | steel-gift-sets.jpg | https://vinodcookware.com/products/vinod-grandior-triply-sets |
 | steel-tiffin-box-3-tier.jpg | https://myborosil.com/products/borosil-superfresh-microwavable-stainless-steel-lunchbox-set-of-3-310ml-vertical-bag |
+
+## Computer-rendered pictures (made for this site)
+
+These 7 pictures are 3D renders created with scripts/render-products.mjs, not photographs: peetal-kadhai, peetal-handi-patila, peetal-lota-glass-jug, peetal-thali-bowl-set, peetal-bhagona-degchi, kansa-gift-sets, stainless-steel-thali-set. Replace any of them with a real photo of the same file name (.jpg) when available.
