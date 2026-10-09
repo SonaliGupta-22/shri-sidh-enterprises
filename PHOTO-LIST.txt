@@ -1,0 +1,35 @@
+PRODUCT PHOTOS - Shri Sidh Enterprises
+
+Put each photo in:  public/images/products/   with EXACTLY the file name below.
+Products without a photo keep showing the icon, so you can add photos a few at a time.
+
+Photo tips:
+  - Take photos in daylight, near a window, on a plain light background (a white cloth or sheet).
+  - Landscape (wide) photo, 4:3 shape, with the product in the middle. Phone camera is fine.
+  - JPG format. Keep each file under 300 KB (resize if bigger, e.g. width 1000 px).
+  - File names must be lowercase, exactly as below.
+
+FILE NAME                                   PRODUCT
+-----------------------------------------------------------------
+peetal-pooja-thali-set.jpg   <-   Peetal Pooja Thali Set  /  पीतल पूजा थाली सेट
+peetal-handi-patila.jpg   <-   Peetal Handi / Patila  /  पीतल हांडी / पतीला
+peetal-kadhai.jpg   <-   Peetal Kadhai  /  पीतल की कड़ाही
+peetal-lota-glass-jug.jpg   <-   Peetal Lota, Glass & Jug  /  पीतल लोटा, गिलास और जग
+peetal-thali-bowl-set.jpg   <-   Peetal Thali & Bowl Set  /  पीतल थाली और कटोरी सेट
+peetal-bhagona-degchi.jpg   <-   Peetal Bhagona / Degchi  /  पीतल भगोना / देगची
+brass-gift-items.jpg   <-   Brass Gift Items  /  पीतल के गिफ्ट आइटम
+kansa-gift-sets.jpg   <-   Kansa Gift Sets  /  कांसे के गिफ्ट सेट
+copper-gift-sets.jpg   <-   Copper Gift Sets  /  तांबे के गिफ्ट सेट
+steel-gift-sets.jpg   <-   Steel Gift Sets  /  स्टील के गिफ्ट सेट
+induction-cooktop.jpg   <-   Induction Cooktop  /  इंडक्शन कुकटॉप
+mixer-grinder.jpg   <-   Mixer Grinder  /  मिक्सर ग्राइंडर
+electric-kettle.jpg   <-   Electric Kettle  /  इलेक्ट्रिक केतली
+rice-cooker.jpg   <-   Rice Cooker  /  राइस कुकर
+sandwich-maker-toaster.jpg   <-   Sandwich Maker & Toaster  /  सैंडविच मेकर और टोस्टर
+stainless-steel-thali-set.jpg   <-   Stainless Steel Thali Set  /  स्टेनलेस स्टील थाली सेट
+steel-tiffin-box-3-tier.jpg   <-   Steel Tiffin Box (3 Tier)  /  स्टील टिफिन बॉक्स (3 लेयर)
+non-stick-kadhai-tawa.jpg   <-   Non-Stick Kadhai & Tawa  /  नॉन-स्टिक कड़ाही और तवा
+pressure-cooker.jpg   <-   Pressure Cooker  /  प्रेशर कुकर
+glassware-serving-sets.jpg   <-   Glassware & Serving Sets  /  ग्लासवेयर और सर्विंग सेट
+airtight-container-set.jpg   <-   Airtight Container Set  /  एयरटाइट कंटेनर सेट
+insulated-flask-bottles.jpg   <-   Insulated Flask & Bottles  /  इन्सुलेटेड फ्लास्क और बोतल

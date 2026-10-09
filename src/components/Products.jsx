@@ -2,6 +2,23 @@ import { useEffect, useMemo, useState } from 'react'
 import { products, categories, business } from '../data/siteData.js'
 import { useLang } from '../i18n.jsx'
 
+// Photo file name for a product, from its English name: "Peetal Handi / Patila" -> peetal-handi-patila.jpg
+// Put the photo in public/images/products/. A product can also set  image: '/images/...'  to use any other file.
+export const photoSlug = (p) => p.name.en.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
+function ProductImage({ p, alt }) {
+  const [failed, setFailed] = useState(false)
+  if (failed) return <span className="card-emoji">{p.emoji}</span>
+  return (
+    <img
+      src={p.image || `/images/products/${photoSlug(p)}.jpg`}
+      alt={alt}
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  )
+}
+
 export default function Products() {
   const [category, setCategory] = useState('All')
   const [query, setQuery] = useState('')
@@ -61,7 +78,7 @@ export default function Products() {
               <article key={p.id} className="card">
                 {p.tag && <span className="tag">{pick(p.tag)}</span>}
                 <div className="card-img">
-                  {p.image ? <img src={p.image} alt={pick(p.name)} loading="lazy" /> : p.emoji}
+                  <ProductImage p={p} alt={pick(p.name)} />
                 </div>
                 <h3>{pick(p.name)}</h3>
                 <p>{pick(p.desc)}</p>
