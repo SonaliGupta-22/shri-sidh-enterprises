@@ -23,11 +23,13 @@ export const business = {
 export const festival = {
   enabled: true,
   title: { en: 'Happy Diwali & Dhanteras', hi: 'शुभ दीपावली एवं धनतेरस' },
-  text: {
-    en: 'Dhanteras is the day to bring home new utensils. Light up your home this Diwali with brass, copper and steel ware, gift sets and kitchen appliances. Ask us for festival rates and ready gift packs. Bulk orders taken for every occasion.',
-    hi: 'धनतेरस पर नए बर्तन घर लाने की परंपरा है। इस दीपावली पीतल, तांबे और स्टील के बर्तन, गिफ्ट सेट और किचन अप्लायंसेस से अपना घर रोशन करें। त्योहारी भाव और तैयार गिफ्ट पैक के बारे में पूछें। हर अवसर के लिए बल्क ऑर्डर लिए जाते हैं।',
-  },
-  ctaShop: { en: 'See Diwali Gifts', hi: 'दीपावली गिफ्ट देखें' },
+  // Messages that scroll along the slim festival strip, after the title.
+  ticker: [
+    { en: 'Dhanteras is the day to bring home new utensils', hi: 'धनतेरस पर नए बर्तन घर लाने की परंपरा है' },
+    { en: 'Ask us for festival rates and ready gift packs', hi: 'त्योहारी भाव और तैयार गिफ्ट पैक के बारे में पूछें' },
+    { en: 'Bulk orders taken for every occasion', hi: 'हर अवसर के लिए बल्क ऑर्डर लिए जाते हैं' },
+  ],
+  ctaShort: { en: 'WhatsApp', hi: 'WhatsApp' },
   ctaChat: { en: 'Ask on WhatsApp', hi: 'WhatsApp पर पूछें' },
   waMsg: { en: 'Hello, I want to know about Diwali offers and gift packs.', hi: 'नमस्ते, मुझे दीपावली के ऑफर और गिफ्ट पैक के बारे में जानना है।' },
 }
