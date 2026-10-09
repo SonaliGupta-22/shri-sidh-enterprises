@@ -12,7 +12,15 @@ function ProductImage({ p, alt }) {
   const sources = [p.image, `/images/products/${slug}.jpg`, `/images/products/${slug}.svg`].filter(Boolean)
   const [i, setI] = useState(0)
   if (i >= sources.length) return <span className="card-emoji">{p.emoji}</span>
-  return <img src={sources[i]} alt={alt} loading="lazy" onError={() => setI(i + 1)} />
+  return (
+    <img
+      src={sources[i]}
+      alt={alt}
+      className={sources[i].endsWith('.svg') ? 'illus' : undefined}
+      loading="lazy"
+      onError={() => setI(i + 1)}
+    />
+  )
 }
 
 export default function Products() {

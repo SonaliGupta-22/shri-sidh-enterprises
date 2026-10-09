@@ -88,7 +88,13 @@ const ui = {
     directions: { en: 'Get Directions', hi: 'रास्ता देखें' },
     waMsg: { en: 'Hello, I am {name} ({phone}).\n{message}', hi: 'नमस्ते, मैं {name} ({phone}) हूँ।\n{message}' },
   },
-  footer: { rights: { en: 'All rights reserved.', hi: 'सर्वाधिकार सुरक्षित।' } },
+  footer: {
+    rights: { en: 'All rights reserved.', hi: 'सर्वाधिकार सुरक्षित।' },
+    credit: {
+      en: 'Some product images are courtesy of Borosil and Vinod. Brand names and images belong to their owners.',
+      hi: 'कुछ उत्पादों की तस्वीरें बोरोसिल और विनोद के सौजन्य से। ब्रांड नाम और तस्वीरें उनके स्वामियों की हैं।',
+    },
+  },
   floatMsg: { en: 'Hello, I would like to enquire about your utensils.', hi: 'नमस्ते, मुझे आपके बर्तनों के बारे में पूछना है।' },
 }
 
