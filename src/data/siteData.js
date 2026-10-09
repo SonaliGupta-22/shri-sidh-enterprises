@@ -19,6 +19,19 @@ export const business = {
   sunday: { en: 'Sunday: Closed', hi: 'रविवार: बंद' },
 }
 
+// Festival banner. Set enabled: false to hide it after the festival, or change the text for the next one.
+export const festival = {
+  enabled: true,
+  title: { en: 'Happy Diwali & Dhanteras', hi: 'शुभ दीपावली एवं धनतेरस' },
+  text: {
+    en: 'Dhanteras is the day to bring home new utensils. Light up your home this Diwali with brass, copper and steel ware, gift sets and kitchen appliances. Ask us for festival rates and ready gift packs. Bulk orders taken for every occasion.',
+    hi: 'धनतेरस पर नए बर्तन घर लाने की परंपरा है। इस दीपावली पीतल, तांबे और स्टील के बर्तन, गिफ्ट सेट और किचन अप्लायंसेस से अपना घर रोशन करें। त्योहारी भाव और तैयार गिफ्ट पैक के बारे में पूछें। हर अवसर के लिए बल्क ऑर्डर लिए जाते हैं।',
+  },
+  ctaShop: { en: 'See Diwali Gifts', hi: 'दीपावली गिफ्ट देखें' },
+  ctaChat: { en: 'Ask on WhatsApp', hi: 'WhatsApp पर पूछें' },
+  waMsg: { en: 'Hello, I want to know about Diwali offers and gift packs.', hi: 'नमस्ते, मुझे दीपावली के ऑफर और गिफ्ट पैक के बारे में जानना है।' },
+}
+
 // Brand names shown in the brands strip (from the shop's visiting card).
 export const distributorBrands = ['Borosil Ltd.']
 export const dealerBrands = [

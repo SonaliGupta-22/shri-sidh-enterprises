@@ -1,4 +1,5 @@
 import Header from './components/Header.jsx'
+import Festival from './components/Festival.jsx'
 import Hero from './components/Hero.jsx'
 import Brands from './components/Brands.jsx'
 import Products from './components/Products.jsx'
@@ -16,6 +17,7 @@ export default function App() {
     <>
       <Header />
       <main>
+        <Festival />
         <Hero />
         <Brands />
         <Products />

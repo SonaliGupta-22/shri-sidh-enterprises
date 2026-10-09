@@ -18,6 +18,11 @@ export default function Scrap() {
               <div className="scrap-icon" aria-hidden="true">{icon}</div>
               <h2>{pick(t.title)}</h2>
               <p>{pick(t.text)}</p>
+              {t.chips && (
+                <ul className="occasions">
+                  {t.chips.map((c) => <li key={c.en}>{pick(c)}</li>)}
+                </ul>
+              )}
               <a
                 className="btn"
                 target="_blank"

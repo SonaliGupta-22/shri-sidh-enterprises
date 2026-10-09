@@ -36,13 +36,21 @@ const ui = {
     waMsg: { en: 'Hello, I want to know the price of: ', hi: 'नमस्ते, मुझे इसकी कीमत जाननी है: ' },
   },
   wholesale: {
-    title: { en: 'Wholesale Deals', hi: 'थोक सौदे' },
+    title: { en: 'Wholesale & Bulk Orders', hi: 'थोक और बल्क ऑर्डर' },
     text: {
-      en: 'Shopkeepers, hotels, caterers and event planners: get special wholesale rates on utensils and kitchen items in bulk.',
-      hi: 'दुकानदार, होटल, केटरर और इवेंट वालों के लिए बर्तन और किचन सामान पर थोक में खास रेट।',
+      en: 'We take bulk orders for every kind of occasion. Shopkeepers, hotels, caterers and event planners get special wholesale rates on utensils, gift sets and kitchen items.',
+      hi: 'हम हर तरह के अवसर के लिए बल्क ऑर्डर लेते हैं। दुकानदार, होटल, केटरर और इवेंट वालों को बर्तन, गिफ्ट सेट और किचन सामान पर थोक में खास रेट।',
     },
+    chips: [
+      { en: 'Weddings', hi: 'शादी' },
+      { en: 'Festivals', hi: 'त्योहार' },
+      { en: 'Birthdays & Parties', hi: 'जन्मदिन और पार्टी' },
+      { en: 'Housewarming', hi: 'गृहप्रवेश' },
+      { en: 'Corporate Gifting', hi: 'कॉर्पोरेट गिफ्ट' },
+      { en: 'Hotels & Catering', hi: 'होटल और केटरिंग' },
+    ],
     cta: { en: 'Ask Wholesale Rate on WhatsApp', hi: 'WhatsApp पर थोक भाव पूछें' },
-    waMsg: { en: 'Hello, I am interested in wholesale deals. Please share the rates.', hi: 'नमस्ते, मुझे थोक में सामान लेना है। कृपया भाव बताएँ।' },
+    waMsg: { en: 'Hello, I want to place a bulk order. Please share the rates.', hi: 'नमस्ते, मुझे बल्क ऑर्डर देना है। कृपया भाव बताएँ।' },
   },
   scrap: {
     title: { en: 'We Also Buy Scrap', hi: 'हम स्क्रैप (कबाड़) भी खरीदते हैं' },
